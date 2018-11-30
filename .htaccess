@@ -1,0 +1,4 @@
+AuthName "Desautentic"
+AuthUserFile C:\xampp\htdocs\dashboard\Tourmat-Frontent\.htpasswd
+AuthType Basic
+require user jorel
