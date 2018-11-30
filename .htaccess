@@ -1,0 +1,4 @@
+AuthName "No mames chingon"
+AuthUserFile C:\Users\Lenin Cabrera\Documents\GitHub\Tourmat-Frontent\.htpasswd
+AuthType Basic
+require user jorel
