@@ -3,23 +3,43 @@
 <head>
 	<title>Inicio</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="/assets/css/estilos.css" style type="text/css">
+	<link rel="stylesheet" href="../assets/css/estilos.css">
+	<link rel="stylesheet" href="../assets/css/AlertifyJS/css/alertify.min.css" />
+	<link rel="stylesheet" href="../assets/css/AlertifyJS/css/themes/semantic.min.css" />
+	<script src="../assets/css/AlertifyJS/alertify.min.js"></script>
+	<script type="text/javascript">
+		function mensaje(){	
+			alertify.alert("HEADER","Esto es un mensaje").set('label', 'Aceptar');     
+		}
+		function confirmar(){
+			var confirm= alertify.confirm('Probando confirm','Confirmar solicitud?',null,null).set('labels', {ok:'Confirmar', cancel:'Cancelar'}); 
+			
+			//callbak al pulsar botón positivo
+			confirm.set('onok', function(){
+			    alertify.success('Has confirmado');
+			});
+			//callbak al pulsar botón negativo
+			confirm.set('oncancel', function(){ 
+			    alertify.error('Has Cancelado el dialog');
+
+			})	
+
+		}
+	</script>
 </head>
 <body>
 	
 	<div class="loginbox">
-		<img src="/assets/img/usa.jpg" width= "50%" class="avatar">
+		<img src="../assets/img/usa.jpg" width= "50%" class="avatar">
 		<h1>Iniciar sesión</h1>
 		<form action="" method="post" class="">
 			</br>
-			<input type="text" name="" placeholder="Nombre de usuario"> <br><br>
-			<input type="password" name="" placeholder="Contraseña">
-			<input type="submit" name="" value="Login"><br><br>
+			<input id="username" type="text" name="username" placeholder="Nombre de usuario"> <br><br>
+			<input id="pswd" type="password" name="pswd" placeholder="Contraseña">
+			<input type="button" onclick="confirmar()" name="Login" value="Login"><br><br>
 			<a href="#">A olvidado su contraseña</a><br>
-			<a href="#">Crear cuenta</a>
 		</form>
 	</div>
-
-
 </body>
+<script src="../assets/css/AlertifyJS/alertify.min.js"></script>
 </html>
