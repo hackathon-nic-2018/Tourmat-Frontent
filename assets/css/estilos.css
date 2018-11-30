@@ -58,7 +58,7 @@ font-size: 22px;
 	border-bottom: 1px solid #fff;
 	background: transparent;
 	outline: none;
-	height: 40px;
+	height: 20px;
 	color: #fff;
 	font-size: 16px;
 }
@@ -66,7 +66,7 @@ font-size: 22px;
 .loginbox input[type="submit"]{
 	border: none;
 	outline: none;
-	height: 40px;
+	height: 80px;
 	background: #0182D8;
 	color: #fff;
 	font-size: 18px;
@@ -88,4 +88,24 @@ font-size: 22px;
 
 .loginbox a:hover{
 	color: #fff;
+}
+
+.button {
+    background-color: rgb(48, 22, 196);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #1B31A7;
+    color: #1B31A7;
 }
