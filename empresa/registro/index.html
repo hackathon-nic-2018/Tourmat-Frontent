@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registro</title>
+	<title>Registro</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+	
+	<div class="loginbox">
+		<img src="usa.jpg" width= "50 %" class="avatar">
+		<h1>Registrar Negocio</h1>
+		<form action="" method="post" class="">
+			<br>
+			<center>
+				<p>Datos usuriario</p>
+			<input type="text" name="" placeholder="Nombre de usuario"> <br><br>
+			<input type="password" name="" placeholder="Contraseña">
+			<p>Datos del Negocio</p>
+			<input type="text" name="" placeholder="Nombre del negocio">
+			<input list="localizaciones" id="locatios" placeholder="Selecciona la hubicación del negocio" name="locatios" />
+			<datalist id="localizaciones">
+				<option value="Matagalpa Zona Urbana">
+				<option value="Darío">
+				<option value="Río Blanco">
+				<option value="Matagalpa">
+				<option value="Matiguas">
+			</datalist>
+			<input list="actividades" id="activities" placeholder="Selecciona la actividad del negocio" name="activities" />
+			<datalist id="actividades">
+				<option value="Hotelería">
+				<option value="Balniario">
+				<option value="Restaurante">
+				<option value="Parque">
+				<option value="Reserva">
+			</datalist>
+		<br>
+			<input type="submit" name="" value="Registrar"><br><br>
+		</center>
+			
+			
+		</form>
+	</div>
+
+
 </body>
 </html>
